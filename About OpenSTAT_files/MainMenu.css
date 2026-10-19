@@ -1,0 +1,463 @@
+
+/* =========================
+   ORIGINAL NAVBAR STYLE (KEEP)
+========================= */
+
+.navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-collapse {
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* ===== MENU BAR BACKGROUND ===== */
+#mainHeader-inner .navbar.navbar-default {
+    background: #0073c2 !important;
+    border: none !important;
+    box-shadow: 
+        0 4px 6px rgba(0,0,0,0.15),
+        -4px 0 6px rgba(0,0,0,0.08),
+        4px 0 6px rgba(0,0,0,0.08);
+}
+
+/* ===== TOP MENU LINKS ===== */
+#dnnMenu .navbar-nav > li > a {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 20px 23px;
+    text-align: center;
+}
+
+/* =========================
+   MENU CENTERING
+========================= */
+
+#dnnMenu {
+    text-align: center;
+}
+
+#dnnMenu .navbar-nav {
+    float: none !important;
+    display: inline-block;
+}
+
+#dnnMenu .navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+/* =========================
+   DROPDOWN BASE
+========================= */
+
+#dnnMenu .dropdown-menu {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 750px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 9999;
+}
+
+/* =========================
+   SHOW ON HOVER
+========================= */
+
+#dnnMenu .dropdown:hover > .dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   3 COLUMN LAYOUT
+========================= */
+
+#dnnMenu .dropdown-menu.subLevel > li {
+    width: 33.33%;
+    list-style: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* =========================
+   SUBLEVEL = TITLE ONLY (NOT CLICKABLE)
+========================= */
+
+#dnnMenu .dropdown-menu.subLevel > li > a {
+    pointer-events: none;
+    cursor: default;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: #0073c2 !important;
+
+    display: block;
+    padding: 8px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   SUBLEVELRIGHT (CLICKABLE LINKS)
+========================= */
+
+#dnnMenu .subLevelRight {
+    display: block !important;
+    position: static !important;
+
+    margin-left: 10px;
+    padding-left: 10px;
+    box-shadow: none;
+    min-width: 10%;
+}
+
+#dnnMenu .subLevelRight a {
+    font-weight: normal;
+    font-size: 13px;
+    color: #333 !important;
+
+    display: block;
+    padding: 4px 0;
+}
+
+/* =========================
+   LINK HOVER
+========================= */
+
+#dnnMenu .subLevelRight a:hover {
+    color: #0073c2 !important;
+    font-weight: 600;
+}
+
+/* =========================
+   REMOVE ARROW POINTER
+========================= */
+
+#dnnMenu .dropdown-menu::after {
+    display: none !important;
+}
+
+/* =========================
+   CARET FIX (RIGHT SIDE)
+========================= */
+
+#dnnMenu .topLevel > li > a {
+    position: relative;
+    padding-right: 20px !important;
+}
+
+#dnnMenu .topLevel > li > a .caret {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    #dnnMenu .dropdown-menu {
+        position: static;
+        min-width: 100%;
+        display: none;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    #dnnMenu .dropdown.open > .dropdown-menu {
+        display: block;
+    }
+
+    #dnnMenu .dropdown-menu.subLevel > li {
+        width: 100%;
+    }
+
+    #dnnMenu .subLevelRight {
+        margin-left: 0;
+    }
+}
+
+/* =========================
+   SUBLEVELRIGHT BASE
+========================= */
+
+#dnnMenu .subLevelRight {
+    display: block !important;
+    position: static !important;
+    background: transparent;
+    box-shadow: none;
+    min-width: 100%;
+    padding-left: 10px;
+}
+
+/* =========================
+   HIDE NESTED SUBMENU
+========================= */
+
+#dnnMenu .subLevelRight .subLevelRight {
+    display: none !important;
+    position: absolute !important;
+
+    left: 70%;
+    top: 0;
+
+    min-width: 220px;
+    background: #fff;
+    padding: 10px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 9999;
+    margin-top: 10%;
+}
+
+/* =========================
+   SHOW ONLY ON HOVER
+========================= */
+
+#dnnMenu .subLevelRight li:hover > .subLevelRight {
+    display: block !important;
+}
+
+/* =========================
+   PREVENT OVERLAP
+========================= */
+
+#dnnMenu .subLevelRight li {
+    position: relative;
+}
+
+#dnnMenu .navbar-nav > li.active > a,
+#dnnMenu .navbar-nav > li.active > a:hover,
+#dnnMenu .navbar-nav > li.active > a:focus,
+#dnnMenu .dropdown-menu li.active > a,
+#dnnMenu .dropdown-menu li.active > a:hover,
+#dnnMenu .dropdown-menu li.active > a:focus {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* =========================================
+   STICKY MENU
+========================================= */
+
+.row-menu {
+    position: relative;
+    z-index: 9999;
+}
+
+.row-menu.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slideDown .3s ease;
+}
+
+/* Prevent page jump */
+body.menu-fixed {
+    padding-top: 60px;
+}
+
+/* =========================================
+   MOBILE MENU FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* MOBILE NAVBAR */
+    #dnnMenu .navbar-nav {
+        display: block !important;
+        width: 100%;
+        margin: 0;
+    }
+
+    #dnnMenu .navbar-nav > li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #dnnMenu .navbar-nav > li > a {
+        display: block;
+        width: 100%;
+        padding: 14px 18px;
+    }
+
+    /* TOGGLE BUTTON */
+    .navbar-toggle {
+        display: block;
+        border: none;
+        background: transparent !important;
+        margin-top: 12px;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #fff !important;
+    }
+
+    /* COLLAPSE MENU */
+    .navbar-collapse {
+        max-height: 80vh;
+        overflow-y: auto;
+        background: #0073c2;
+    }
+
+    /* REMOVE DESKTOP HOVER */
+    #dnnMenu .dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+
+    /* MOBILE DROPDOWN */
+    #dnnMenu .dropdown.open > .dropdown-menu {
+        display: block !important;
+        position: static !important;
+        width: 100%;
+        min-width: 100%;
+        box-shadow: none;
+        padding: 0;
+        background: #0b82d3;
+    }
+
+    /* SUBMENU ITEMS */
+    #dnnMenu .dropdown-menu.subLevel > li {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* SUBMENU TITLE */
+    #dnnMenu .dropdown-menu.subLevel > li > a {
+        pointer-events: auto;
+        padding: 12px 18px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        color: #fff !important;
+    }
+
+    /* SUBLEVELRIGHT */
+    #dnnMenu .subLevelRight {
+        display: block !important;
+        padding-left: 0;
+        margin-left: 0;
+        background: #0f8ee8;
+    }
+
+    #dnnMenu .subLevelRight a {
+        color: #fff !important;
+        padding: 10px 30px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* DISABLE FLOATING NESTED MENUS */
+    #dnnMenu .subLevelRight .subLevelRight {
+        position: static !important;
+        display: block !important;
+        width: 100%;
+        margin-top: 0;
+        left: 0;
+        box-shadow: none;
+        background: #1599f5;
+    }
+
+    /* CARET POSITION */
+    #dnnMenu .topLevel > li > a .caret {
+        right: 15px;
+    }
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   FULL WIDTH MENU
+========================================= */
+
+.row-menu {
+    position: relative;
+
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    background: #0073c2;
+    z-index: 9999;
+}
+
+/* STICKY FULL WIDTH */
+.row-menu.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+
+    z-index: 99999;
+
+    background: #0073c2;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    animation: slideDown .3s ease;
+}
+
+/* REMOVE CONTAINER LIMIT */
+.row-menu .container,
+.row-menu .container-fluid,
+.row-menu .row {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR FULL WIDTH */
+.row-menu .navbar {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+/* MENU CENTER */
+#dnnMenu {
+    width: 100%;
+    text-align: center;
+}
