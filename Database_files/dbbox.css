@@ -1,0 +1,130 @@
+.dbbox {
+text-align:center;
+padding-bottom:10px;
+}
+.dbbox:hover {
+box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF; background-color:#F0F0F0 ; pointer:hand;text-align:center;padding-bottom:10px;
+}
+.dbbox img {
+width:70px;height:100px;display:block;margin:0 auto -15px auto;
+}
+
+.dbbox a {
+font-weight:bold;text-decoration:none;
+}
+.dbbox a {
+font-weight:bold;text-decoration:none;
+}
+
+.dbboxtxt {
+font-weight:bold;text-align:center;text-transform:uppercase;
+}
+
+/*
+.db-1A {display:none}
+.db-1B {display:none}
+.db-1C {display:none}
+*/
+.db-1D {display:none}
+/*
+.db-1E {display:none}
+.db-1F {display:none}
+.db-1G {display:none}
+.db-1H {display:none}
+.db-1I {display:none}
+.db-1J {display:none}
+.db-1K {display:none}
+
+.db-2B {display:none}
+.db-2C {display:none}
+.db-2E {display:none}
+.db-2F {display:none}
+.db-2G {display:none}
+.db-2H {display:none}
+.db-2I {display:none}
+.db-2J {display:none}
+.db-2K {display:none}
+.db-2L {display:none}
+.db-2M {display:none}
+.db-2N {display:none}
+.db-2O {display:none}
+
+.db-3A {display:none}
+.db-3B {display:none}
+.db-3D {display:none}
+.db-3E {display:none}
+.db-3E1 {display:none}
+.db-3F {display:none}
+.db-3G {display:none}
+.db-3H {display:none}
+.db-3I {display:none}
+.db-3K {display:none}
+.db-3L {display:none}
+.db-3J {display:none}
+*/
+#ndcptable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	font-size:90%;
+	
+}
+
+#ndcptable td, #ndcptable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	vertical-align: top;
+}
+
+#ndcptable tr:nth-child(even){background-color: #f2f2f2;}
+
+#ndcptable tr:hover {background-color: #E0FFFF;}
+
+#ndcptable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #D9EDF7;
+    color: #383838;
+	vertical-align: middle;
+	text-align:center !important;
+	/*text-shadow: 0 1px 1px rgba(255, 255, 255, 1);*/
+	/*white-space: nowrap;*/
+}
+#ndcptable .nowp {
+	white-space: nowrap;
+}
+
+#ndcptable th{
+	text-align: center;	
+}
+#ndcptable .smallnote{
+	font-size:10px;
+}
+#ndcptable h4{
+	font-size:100%;
+	margin-top:0px;
+}
+#ndcptable caption{
+	font-size:130%;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.dbbox2 {
+text-align:center;
+padding-top:10px;
+padding-bottom:10px;
+float:right;margin-right:20px;margin-bottom:-50px;margin-top:-20px
+}
+.dbbox2:hover {
+box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF; background-color:#F0F0F0 ; pointer:hand;text-align:center;padding-bottom:10px;border-radius:10px;
+}
+.dbbox2 img {
+width:60px;height:50px;display:block;margin:0 auto 2px auto;
+}
+
